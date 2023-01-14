@@ -1,4 +1,4 @@
-# 🏧 Cashier
+# 💸 ATM
 
 ## Table of Contents
 
