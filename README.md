@@ -1,4 +1,4 @@
-# :notebook: Cashier
+# 🏧 Cashier
 
 ## Table of Contents
 
