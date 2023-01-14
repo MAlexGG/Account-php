@@ -10,7 +10,7 @@
 
 ## General Info
 
-This is a simple cashier exercise in php vanilla, that allows me to deposit and withdraw money from my account. OOP and tested.
+This is a simple ATM exercise in php vanilla, that allows me to deposit and withdraw money from my account. OOP and tested.
 
 ## Technologies
 
