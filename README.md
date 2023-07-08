@@ -10,7 +10,7 @@
 
 ## General Info
 
-This is a simple ATM exercise in php vanilla, that allows me to deposit and withdraw money from my account. OOP and tested.
+This is a simple ATM exercise in php vanilla, that allows me to create bank accounts and deposit and withdraw money from my account. OOP and tested. It has not data persistence.
 
 ## Technologies
 

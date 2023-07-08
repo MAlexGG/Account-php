@@ -1,8 +1,7 @@
 <?php
 
 namespace App;
-
-require("./Account.php");
+require_once("./Account.php");
 
 ?>
 
@@ -17,26 +16,37 @@ require("./Account.php");
     <title>Deposit</title>
 </head>
 
-<body>
+<body class="row m-3 p-0">
     <?php
-    $count = new Account(1, "Alex", "Galarza", 100);
+    $countnumber = $_GET['countnumber'];
+    $name = $_GET['name'];
+    $lastname = $_GET['lastname'];
+    $balance = $_GET['balance'];
+    $count = new Account($countnumber, $name, $lastname, $balance);
     $amount = $_REQUEST['deposit'];
+    ?>
+    <div class="card p-0 mb-3 bg-dark text-white">
+        <div class="card-header">
+            My Balance
+        </div>
+    </div>
 
+    <?php
     if ($amount === '') {
     ?>
-        <div class="card m-3">
+        <div class="card p-0">
             <div class="card-header">Deposits</div>
             <div class="card-body">
-                <p>Ingrese una cantidad</p>
+                <p>Please enter an amount</p>
             </div>
-            <a class="btn btn-dark m-3" href="../index.php">Return</a>
+            <a class="btn btn-dark m-3" href="../index.php">Logout</a>
         </div>
 
     <?php
     } else {
         $count->deposit($amount);
     ?>
-        <div class="card m-3">
+        <div class="card p-0">
             <div class="card-header">Deposits</div>
             <div class="card-body">
                 <p>Account number:
@@ -55,7 +65,7 @@ require("./Account.php");
                     } ?>
                 </p>
             </div>
-            <a class="btn btn-dark m-3" href="../index.php">Return</a>
+            <a class="btn btn-dark m-3" href="../index.php">Logout</a>
         </div>
     <?php
     }

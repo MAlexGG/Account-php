@@ -47,7 +47,7 @@ class Account
         if ($this->balance >= $amount) {
             $this->balance -= $amount;
         } else {
-            return "¡No tiene suficiente saldo!";
+            return "You do not have enough balance in your account!";
         }
     }
 }

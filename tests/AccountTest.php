@@ -56,7 +56,7 @@ class AccountTest extends TestCase
         $account = new Account(1, "Alex", "Galarza", 100);
         $sut1 = $account->withdraw(200);
         $sut2 = $account->getBalance();
-        $this->assertEquals("No tiene suficiente saldo", $sut1);
+        $this->assertEquals("You do not have enough balance in your account!", $sut1);
         $this->assertEquals(100, $sut2);
     }
 }
